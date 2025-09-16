@@ -6,9 +6,7 @@ It lets users register, login, view cars, and book them. We also used ImageKit f
 🔗 Live demo: [https://car-rental-nine-henna.vercel.app/](https://car-rental-nine-henna.vercel.app/)
 
 ---
- 
 
----
 
 ## Tech Used
 - React + Vite (frontend)  
