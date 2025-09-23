@@ -1,12 +1,11 @@
 import express from "express";
-import { getCars, getUserData, loginUser, registerUser } from "../controllers/userController.js";
-import { protect } from "../middleware/auth.js";
+import { registerUser, loginUser, getUserData, getCars } from "../controllers/userController.js";
 
-const userRouter = express.Router();
+const router = express.Router();
 
-userRouter.post('/register', registerUser)
-userRouter.post('/login', loginUser)
-userRouter.get('/data',protect,getUserData)
-userRouter.get('/cars', getCars)
+router.post("/register", registerUser);
+router.post("/login", loginUser);
+router.get("/get-user", getUserData);
+router.get("/cars", getCars);
 
-export default userRouter;
+export default router;
